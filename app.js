@@ -1,7 +1,6 @@
 (function(){
   const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
-  const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
-
+  
   // nav
   const nav=$('.nav'); const onScroll=()=>nav&&nav.classList.toggle('scrolled',scrollY>8); addEventListener('scroll',onScroll,{passive:true}); onScroll();
   const mb=$('.menu-btn'), links=$('.links'); if(mb) mb.onclick=()=>{const o=links.classList.toggle('open'); mb.setAttribute('aria-expanded',o)};
@@ -17,8 +16,9 @@
     if(!('IntersectionObserver' in window)){vids.forEach(play);return;}
     vids.forEach(v=>{v.__obs=1; io.observe(v);});
   };
-  const io=new IntersectionObserver(es=>es.forEach(e=>{const v=e.target; if(e.isIntersecting){ if(!reduce) play(v); else if(!v.src){v.src=v.dataset.src; v.preload='metadata';} } else if(v.src) v.pause();}),{rootMargin:'200px 0px',threshold:0.15});
+  const io=new IntersectionObserver(es=>es.forEach(e=>{const v=e.target; if(e.isIntersecting){ play(v); } else if(v.src) v.pause();}),{rootMargin:'200px 0px',threshold:0.15});
   __observeVideos();
+  document.addEventListener('visibilitychange',()=>{ if(!document.hidden) $$('video[src]').forEach(v=>{const r=v.getBoundingClientRect(); if(r.bottom>0&&r.top<innerHeight&&!v.closest('.lb')) play(v);}); });
 
   // reveal
   const ro=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in'); ro.unobserve(e.target);}}),{threshold:.12});

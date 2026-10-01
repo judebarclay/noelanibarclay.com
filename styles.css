@@ -244,4 +244,4 @@ footer a{text-decoration:none}
 .lb-cap a{color:#fff}
 @media (max-width:760px){.lb-nav{display:none}}
 
-@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.hero h1 .ch,.fade-in,.reveal{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}.wall .col{animation-duration:140s!important}}

@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta property="og:title" content="Noelani Barclay">
+<meta property="og:description" content="Faith, fashion, travel and lifestyle creator. Former Miss Nevada Teen USA.">
+<meta property="og:image" content="m_modeltest_4.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect width=%22100%22 height=%22100%22 rx=%2224%22 fill=%22%23121011%22/%3E%3Ctext x=%2250%22 y=%2268%22 font-family=%22Helvetica%22 font-weight=%22700%22 font-size=%2252%22 fill=%22white%22 text-anchor=%22middle%22%3ENB%3C/text%3E%3C/svg%3E">
+<title>Noelani Barclay</title>
+<meta name="description" content="Noelani Barclay — faith, fashion, travel and lifestyle creator based in Nashville and Michigan. Former Miss Nevada Teen USA. Brand partnerships and portfolio.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap">
+<style>
+/* Layout: one calm column of big type and full-bleed photos; a horizontal shelf for brand videos, a type-only index of places, a dated story timeline. */
+:root{
+  --bg:#FBF9F8; --bg2:#F2EEEC; --fg:#121011; --muted:#6F6869; --line:#E4DEDC; --accent:#9A3B4E; --onacc:#FFFFFF;
+  --sans:"Hanken Grotesk","Helvetica Neue",Helvetica,Arial,sans-serif;
+  --serif:"Instrument Serif","Times New Roman",serif;
+  --wrap:1240px; --g:clamp(16px,4vw,40px);
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#0D0C0C;--bg2:#181616;--fg:#F5F2F1;--muted:#A39C9C;--line:#2A2626;--accent:#E07A8F;--onacc:#0D0C0C;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0D0C0C;--bg2:#181616;--fg:#F5F2F1;--muted:#A39C9C;--line:#2A2626;--accent:#E07A8F;--onacc:#0D0C0C;color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--sans);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img,video{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding-inline:var(--g)}
+.eyebrow{font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+h1,h2,h3{margin:0;font-weight:700;letter-spacing:-.035em;line-height:.98;text-wrap:balance}
+h2{font-size:clamp(40px,7vw,96px)}
+.it{font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:-.01em}
+section{scroll-margin-top:56px;padding-block:clamp(72px,11vw,150px)}
+
+/* nav */
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop-filter:saturate(1.4) blur(18px);-webkit-backdrop-filter:saturate(1.4) blur(18px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:56px;gap:16px}
+.brand{font-weight:700;letter-spacing:-.02em;text-decoration:none;font-size:17px;white-space:nowrap}
+.links{display:flex;gap:28px;font-size:14px}
+.links a{text-decoration:none;color:var(--muted)}
+.links a:hover{color:var(--fg)}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--fg);color:var(--bg);text-decoration:none;font-weight:600;font-size:14px;padding:10px 18px;border-radius:999px;border:0;cursor:pointer;font-family:inherit;white-space:nowrap}
+.btn.ghost{background:transparent;color:var(--fg);border:1px solid var(--line)}
+@media (max-width:760px){.links{display:none}}
+
+/* hero */
+.hero{padding-block:clamp(28px,5vw,64px) 0}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(24px,4vw,64px);align-items:end}
+.hero h1{font-size:clamp(64px,11.5vw,168px);letter-spacing:-.055em;line-height:.86}
+.hero h1 span{display:block}
+.hero .lede{font-size:clamp(19px,1.8vw,23px);line-height:1.45;max-width:30ch;margin:28px 0 0;color:var(--fg)}
+.hero .lede em{font-family:var(--serif);font-size:1.15em}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.tag{font-size:13px;font-weight:500;padding:6px 12px;border:1px solid var(--line);border-radius:999px;color:var(--muted)}
+.hero-cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}
+.hero-photo{position:relative;border-radius:22px;overflow:hidden;aspect-ratio:4/5;background:var(--bg2)}
+.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 20%}
+.hero-photo figcaption{position:absolute;left:14px;bottom:14px;font-size:12px;color:#fff;background:rgba(0,0,0,.35);backdrop-filter:blur(8px);padding:5px 10px;border-radius:999px}
+@media (max-width:860px){.hero-grid{grid-template-columns:1fr}.hero-photo{aspect-ratio:4/5;max-height:78vh}}
+
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:clamp(40px,6vw,80px)}
+.stat{padding:26px 0 24px;display:grid;gap:6px}
+.stat + .stat{padding-left:clamp(14px,2.4vw,32px);border-left:1px solid var(--line)}
+.stat b{font-size:clamp(28px,3.6vw,48px);font-weight:700;letter-spacing:-.04em;line-height:1;font-variant-numeric:tabular-nums}
+.stat span{font-size:13px;color:var(--muted)}
+@media (max-width:760px){.stats{grid-template-columns:1fr 1fr}.stat:nth-child(3){padding-left:0;border-left:0}.stat:nth-child(n+3){border-top:1px solid var(--line)}}
+
+/* section heads */
+.head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:clamp(28px,4vw,48px)}
+.head p{max-width:38ch;margin:0;color:var(--muted);font-size:18px}
+
+/* brand shelf */
+.shelf-wrap{position:relative}
+.shelf{display:grid;grid-auto-flow:column;grid-auto-columns:clamp(220px,23vw,290px);gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding-block:4px 18px;padding-inline:max(var(--g),calc((100vw - var(--wrap))/2 + var(--g)));scroll-padding-inline:max(var(--g),calc((100vw - var(--wrap))/2 + var(--g)));scrollbar-width:none;max-width:100%}
+.shelf::-webkit-scrollbar{display:none}
+.reel{scroll-snap-align:start;display:grid;gap:12px;cursor:pointer;background:none;border:0;padding:0;text-align:left;color:inherit;font:inherit}
+.reel .frame{position:relative;aspect-ratio:9/16;border-radius:18px;overflow:hidden;background:var(--bg2)}
+.reel video,.reel img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.reel .play{position:absolute;right:12px;bottom:12px;width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.88);display:grid;place-items:center;transition:transform .2s}
+.reel:hover .play{transform:scale(1.08)}
+.reel .play svg{width:14px;height:14px;margin-left:2px;fill:#111}
+.reel .who{font-weight:600;font-size:15px;line-height:1.25}
+.reel .what{font-size:13px;color:var(--muted);margin-top:2px}
+.arrows{display:flex;gap:8px}
+.arrow{width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:var(--bg);color:var(--fg);cursor:pointer;display:grid;place-items:center;font-size:18px}
+.arrow:hover{background:var(--bg2)}
+@media (max-width:760px){.arrows{display:none}}
+.logos{display:flex;flex-wrap:wrap;gap:10px 28px;margin-top:clamp(28px,4vw,44px);padding-top:24px;border-top:1px solid var(--line);color:var(--muted);font-size:15px;font-weight:500}
+.logos b{color:var(--fg);font-weight:600;margin-right:4px}
+
+/* styled stills */
+.stills{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:clamp(40px,6vw,72px)}
+.still{position:relative;border-radius:16px;overflow:hidden;aspect-ratio:3/4;background:var(--bg2);cursor:pointer;border:0;padding:0}
+.still img{width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+.still:hover img{transform:scale(1.03)}
+.still span{position:absolute;left:10px;bottom:10px;font-size:12px;color:#fff;background:rgba(0,0,0,.38);backdrop-filter:blur(8px);padding:4px 10px;border-radius:999px}
+@media (max-width:760px){.stills{grid-template-columns:1fr 1fr}}
+
+/* places */
+.places{border-top:1px solid var(--line)}
+.place{display:grid;grid-template-columns:1fr auto;align-items:center;gap:16px;padding:clamp(16px,2vw,24px) 0;border-bottom:1px solid var(--line);cursor:pointer;background:none;border-left:0;border-right:0;border-top:0;width:100%;text-align:left;color:inherit;font:inherit;position:relative}
+.place .name{font-size:clamp(30px,5.4vw,72px);font-weight:700;letter-spacing:-.045em;line-height:1;transition:color .25s,transform .35s cubic-bezier(.2,.7,.2,1)}
+.place .meta{font-size:14px;color:var(--muted);text-align:right;display:grid;gap:2px}
+.place .thumbs{display:none}
+.place:hover .name{color:var(--accent);transform:translateX(10px)}
+.peek{position:fixed;z-index:40;width:280px;aspect-ratio:4/5;border-radius:16px;overflow:hidden;pointer-events:none;opacity:0;transform:scale(.92) rotate(-2deg);transition:opacity .25s,transform .35s cubic-bezier(.2,.7,.2,1);box-shadow:0 24px 60px rgba(0,0,0,.25)}
+.peek.on{opacity:1;transform:scale(1) rotate(-2deg)}
+.peek img{width:100%;height:100%;object-fit:cover}
+@media (hover:none),(max-width:760px){
+  .peek{display:none}
+  .place{grid-template-columns:1fr;gap:12px}
+  .place .meta{text-align:left;display:flex;gap:10px}
+  .place .thumbs{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+  .place .thumbs img{aspect-ratio:1;object-fit:cover;border-radius:10px;width:100%}
+}
+.also{margin-top:24px;color:var(--muted);font-size:15px}
+
+/* story */
+.story{background:var(--bg2)}
+.story-top{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,80px);align-items:start}
+.story-top .big{font-size:clamp(26px,2.8vw,38px);line-height:1.22;letter-spacing:-.02em;font-weight:500;margin:0}
+.story-top .big .it{font-size:1.08em}
+.story-photo{border-radius:20px;overflow:hidden;aspect-ratio:4/5;position:sticky;top:90px}
+.story-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 25%}
+.timeline{margin-top:clamp(36px,5vw,56px);display:grid}
+.tl{display:grid;grid-template-columns:96px 1fr;gap:20px;padding:20px 0;border-top:1px solid var(--line)}
+.tl .yr{font-weight:700;font-variant-numeric:tabular-nums;letter-spacing:-.02em;font-size:18px}
+.tl h3{font-size:20px;letter-spacing:-.02em;line-height:1.2;font-weight:650}
+.tl p{margin:4px 0 0;color:var(--muted);font-size:16px;max-width:52ch}
+.tl.crown .yr{color:var(--accent)}
+.sash{display:inline-block;margin-top:10px;font-family:var(--serif);font-style:italic;font-size:22px;padding:4px 16px;border-radius:999px;background:var(--accent);color:var(--onacc)}
+@media (max-width:860px){.story-top{grid-template-columns:1fr}.story-photo{position:relative;top:0;aspect-ratio:4/5}.tl{grid-template-columns:64px 1fr;gap:14px}}
+
+/* partner */
+.offer{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:20px;overflow:hidden}
+.offer > div{background:var(--bg);padding:clamp(22px,2.6vw,34px);display:grid;gap:8px;align-content:start}
+.offer h3{font-size:22px;letter-spacing:-.025em;line-height:1.15}
+.offer p{margin:0;color:var(--muted);font-size:16px}
+@media (max-width:860px){.offer{grid-template-columns:1fr}}
+.why{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(24px,4vw,56px);margin-top:clamp(48px,7vw,88px)}
+.why h3{font-size:clamp(26px,3vw,36px);margin-bottom:14px}
+.why ul{list-style:none;margin:0;padding:0;display:grid}
+.why li{padding:14px 0;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:16px}
+.why li span:last-child{color:var(--muted);text-align:right}
+@media (max-width:760px){.why{grid-template-columns:1fr}}
+
+/* contact */
+.contact{text-align:left}
+.contact h2{font-size:clamp(48px,9vw,132px);letter-spacing:-.055em;line-height:.9}
+.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:clamp(32px,5vw,56px)}
+.card{border:1px solid var(--line);border-radius:18px;padding:22px;display:grid;gap:10px;align-content:start;min-width:0}
+.card .k{font-size:13px;color:var(--muted)}
+.card .v{font-size:19px;font-weight:600;letter-spacing:-.01em;word-break:break-word}
+.card .row{display:flex;gap:8px;flex-wrap:wrap}
+.chip{font-size:14px;text-decoration:none;padding:7px 14px;border-radius:999px;border:1px solid var(--line)}
+.chip:hover{background:var(--bg2)}
+@media (max-width:860px){.contact-grid{grid-template-columns:1fr}}
+footer{padding-block:32px 48px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+/* lightbox */
+.lb[hidden]{display:none}
+.lb{position:fixed;inset:0;z-index:100;background:rgba(8,7,7,.94);display:grid;grid-template-rows:auto 1fr auto;color:#fff;padding:env(safe-area-inset-top,0px) 0 env(safe-area-inset-bottom,0px)}
+.lb-top{display:flex;justify-content:space-between;align-items:center;padding:14px var(--g);gap:12px}
+.lb-title{font-weight:600;font-size:15px;min-width:0}
+.lb-title small{display:block;color:#bbb;font-weight:400;font-size:13px}
+.lb-x{width:40px;height:40px;border-radius:50%;border:0;background:rgba(255,255,255,.14);color:#fff;font-size:20px;cursor:pointer;flex:none}
+.lb-stage{position:relative;display:grid;place-items:center;min-height:0;padding:0 var(--g)}
+.lb-stage img,.lb-stage video{max-height:100%;max-width:100%;object-fit:contain;border-radius:10px}
+.lb-nav{position:absolute;top:50%;transform:translateY(-50%);width:48px;height:48px;border-radius:50%;border:0;background:rgba(255,255,255,.14);color:#fff;font-size:22px;cursor:pointer}
+.lb-prev{left:var(--g)}.lb-next{right:var(--g)}
+.lb-cap{padding:14px var(--g) 18px;color:#ccc;font-size:14px;text-align:center;max-width:70ch;margin:0 auto}
+.lb-cap a{color:#fff}
+@media (max-width:760px){.lb-nav{display:none}}
+
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+
+<nav class="nav" aria-label="Main">
+  <div class="wrap">
+    <a class="brand" href="#top">Noelani Barclay</a>
+    <div class="links">
+      <a href="#work">Brand work</a>
+      <a href="#places">Places</a>
+      <a href="#story">Story</a>
+      <a href="#partner">Partner</a>
+    </div>
+    <a class="btn" href="#contact">Work with me</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <p class="eyebrow">Creator · Model · Nashville &amp; Michigan</p>
+        <h1><span>Noelani</span><span>Barclay</span></h1>
+        <p class="lede">Faith, fashion, travel and real life, filmed like a <em>postcard</em>. Former Miss Nevada Teen USA, now making content brands love to share.</p>
+        <div class="tags"><span class="tag">Fashion</span><span class="tag">Travel</span><span class="tag">Lifestyle</span><span class="tag">Faith</span><span class="tag">Events</span></div>
+        <div class="hero-cta">
+          <a class="btn" href="#contact">Partner with Noelani</a>
+          <a class="btn ghost" href="#work">See her work</a>
+        </div>
+      </div>
+      <figure class="hero-photo" style="margin:0">
+        <img src="m_modeltest_4.jpg" alt="Noelani Barclay smiling in a black jacket against a soft pink wall" fetchpriority="high">
+        <figcaption>Photo by Ras</figcaption>
+      </figure>
+    </div>
+    <div class="stats" aria-label="Audience">
+      <div class="stat"><b>443.8K</b><span>Likes on TikTok</span></div>
+      <div class="stat"><b>3.2K</b><span>Instagram followers</span></div>
+      <div class="stat"><b>2.7K</b><span>TikTok followers</span></div>
+      <div class="stat"><b>12+</b><span>Cities &amp; national parks in 2026</span></div>
+    </div>
+  </div>
+</header>
+
+<section id="work">
+  <div class="wrap head">
+    <div>
+      <p class="eyebrow">Brand work</p>
+      <h2>Made with <span class="it">brands</span></h2>
+    </div>
+    <div style="display:grid;gap:16px;justify-items:end">
+      <p>Reels, try-ons, event coverage and modeling. Tap any video to watch with sound.</p>
+      <div class="arrows"><button class="arrow" data-dir="-1" aria-label="Scroll videos left">←</button><button class="arrow" data-dir="1" aria-label="Scroll videos right">→</button></div>
+    </div>
+  </div>
+  <div class="shelf-wrap"><div class="shelf" id="shelf"></div></div>
+  <div class="wrap">
+    <div class="stills" id="stills"></div>
+    <div class="logos" aria-label="Brands and events featured">
+      <span><b>Featured</b></span>
+      <span>Well Dressed</span><span>Fifth + Broadway</span><span>GEODIS Park</span><span>CMA Fest</span><span>Bonnaroo × Ross</span><span>Sweet Haven</span><span>Pinterest</span><span>ShopMy</span><span>Evry Jewels</span><span>Lululemon</span><span>Nomatic</span>
+    </div>
+  </div>
+</section>
+
+<section id="places" style="padding-top:0">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <p class="eyebrow">Travel</p>
+        <h2>Places she’s <span class="it">filmed</span></h2>
+      </div>
+      <p>From the Canadian Rockies to Paris. Tap a place to see the photos.</p>
+    </div>
+    <div class="places" id="placelist"></div>
+    <p class="also">Also on her camera roll: Portugal, Spain, London, St. Louis, Chicago, Louisville and Minneapolis.</p>
+  </div>
+  <div class="peek" id="peek" aria-hidden="true"><img alt=""></div>
+</section>
+
+<section class="story" id="story">
+  <div class="wrap">
+    <div class="story-top">
+      <div>
+        <p class="eyebrow">Her story</p>
+        <h2 style="margin-bottom:28px">From the <span class="it">crown</span> to the camera</h2>
+        <p class="big">Noelani grew up in Las Vegas as a gymnast, a hurdler and a pageant girl. She won <span class="it">Miss Nevada Teen USA</span>, ran track at UNLV, and now tells stories from Nashville, Michigan and everywhere in between.</p>
+        <div class="timeline">
+          <div class="tl"><div class="yr">Early</div><div><h3>Born in Altus, Oklahoma. Raised in Las Vegas.</h3><p>A gymnast from childhood. She still pulls off giants on the bar for fun.</p></div></div>
+          <div class="tl"><div class="yr">2018</div><div><h3>First crown at 14</h3><p>Named Miss Teen El Tiempo 2019 as a freshman at Faith Lutheran High School, a preliminary to the state pageant.</p></div></div>
+          <div class="tl"><div class="yr">2019–20</div><div><h3>Semifinalist, Miss Nevada Teen USA</h3><p>Two years in a row. She kept coming back.</p></div></div>
+          <div class="tl crown"><div class="yr">2021</div><div><h3>Crowned Miss Nevada Teen USA</h3><p>Won the state title on June 28, 2021, then represented Nevada at Miss Teen USA in Tulsa, Oklahoma that November.</p><span class="sash">Miss Nevada Teen USA 2021</span></div></div>
+          <div class="tl"><div class="yr">2022</div><div><h3>School record holder</h3><p>Graduated Faith Lutheran holding the school record in the 100m hurdles (15.44).</p></div></div>
+          <div class="tl"><div class="yr">UNLV</div><div><h3>A Runnin’ Rebel</h3><p>Ran hurdles for UNLV Women’s Track &amp; Field and studied business.</p></div></div>
+          <div class="tl"><div class="yr">2024</div><div><h3>Married Jude Barclay</h3><p>They met in 2023 and married at the start of 2024. She’s since joined him on his first tour across the Midwest.</p></div></div>
+          <div class="tl"><div class="yr">2026</div><div><h3>Creator and model</h3><p>Creating fashion, travel and faith content from Nashville and Michigan, modeling for Well Dressed, and working with MMG.</p></div></div>
+        </div>
+      </div>
+      <figure class="story-photo" style="margin:0"><img src="m_modeltest_2.jpg" alt="Noelani seated on a wooden stool in a black jacket and trousers" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<section id="partner">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <p class="eyebrow">For brands</p>
+        <h2>Why <span class="it">partner</span></h2>
+      </div>
+      <p>Warm, faith-forward, family-friendly content that feels like a recommendation from a friend.</p>
+    </div>
+    <div class="offer">
+      <div><h3>Short-form video</h3><p>Reels and TikToks: try-ons, day-in-the-life, “come with me” and product moments.</p></div>
+      <div><h3>Event coverage</h3><p>Festivals, launches and pop-ups covered in real time, like CMA Fest, Bonnaroo and Rodeo Weekend.</p></div>
+      <div><h3>Travel features</h3><p>Destinations, hotels and outdoor brands shown in cinematic, scroll-stopping places.</p></div>
+      <div><h3>Modeling</h3><p>Lookbooks and campaigns. A pageant-trained presence on camera and on set.</p></div>
+      <div><h3>Styled photos</h3><p>Editorial outfit and product stills, ready for your feed and site.</p></div>
+      <div><h3>Affiliate &amp; shop</h3><p>Links and codes through ShopMy, TikTok Shop and brand programs like Evry Jewels.</p></div>
+    </div>
+    <div class="why">
+      <div>
+        <h3>Audience</h3>
+        <ul>
+          <li><span>Based in</span><span>Nashville, TN &amp; Michigan</span></li>
+          <li><span>Topics</span><span>Fashion, travel, lifestyle, faith</span></li>
+          <li><span>Platforms</span><span>TikTok, Instagram</span></li>
+          <li><span>TikTok likes</span><span>443.8K</span></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Good fit for</h3>
+        <ul>
+          <li><span>Fashion &amp; boutiques</span><span>Try-ons, styling</span></li>
+          <li><span>Travel &amp; hospitality</span><span>Trips, stays, outdoors</span></li>
+          <li><span>Nashville spots &amp; events</span><span>Food, venues, festivals</span></li>
+          <li><span>Beauty &amp; jewelry</span><span>GRWM, details</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact" style="padding-top:0">
+  <div class="wrap">
+    <p class="eyebrow">Contact</p>
+    <h2>Let’s make<br>something <span class="it">together.</span></h2>
+    <div class="contact-grid">
+      <div class="card">
+        <span class="k">Partnerships &amp; bookings</span>
+        <span class="v" id="em">noelanimendoza23@gmail.com</span>
+        <div class="row"><a class="chip" href="mailto:noelanimendoza23@gmail.com">Email</a><button class="chip" id="copy" style="background:none;color:inherit;font:inherit;font-size:14px;cursor:pointer">Copy address</button></div>
+      </div>
+      <div class="card">
+        <span class="k">Follow</span>
+        <span class="v">@noelanibarclay</span>
+        <div class="row">
+          <a class="chip" href="https://www.instagram.com/noelanibarclay/" target="_blank" rel="noopener">Instagram</a>
+          <a class="chip" href="https://www.tiktok.com/@noelanibarclay" target="_blank" rel="noopener">TikTok</a>
+        </div>
+      </div>
+      <div class="card">
+        <span class="k">Shop her picks</span>
+        <span class="v">ShopMy · Evry Jewels (code NOE5)</span>
+        <div class="row">
+          <a class="chip" href="https://shopmy.us/shop/noelanibarclay/posts" target="_blank" rel="noopener">ShopMy</a>
+          <a class="chip" href="https://evryjewels.com/?ref=NOELANIBARCLAY" target="_blank" rel="noopener">Evry Jewels</a>
+          <a class="chip" href="https://linktr.ee/noelanibarclay" target="_blank" rel="noopener">All links</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Noelani Barclay. All photos and videos © Noelani Barclay.</span>
+    <span>This site uses no cookies or tracking. Shop links may be affiliate links.</span>
+  </div>
+</footer>
+
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Viewer">
+  <div class="lb-top"><div class="lb-title" id="lbt"></div><button class="lb-x" id="lbx" aria-label="Close">×</button></div>
+  <div class="lb-stage" id="lbs"><button class="lb-nav lb-prev" id="lbp" aria-label="Previous">‹</button><button class="lb-nav lb-next" id="lbn" aria-label="Next">›</button></div>
+  <div class="lb-cap" id="lbc"></div>
+</div>
+
+<script>
+const IG='https://www.instagram.com/';
+const REELS=[
+ {v:'p_wd_shoot',who:'Well Dressed',what:'First campaign shoot as a model',url:IG+'reel/DWU7F6uDoNj/'},
+ {v:'p_wd_cma',who:'Well Dressed × CMA Fest',what:'Festival outfit, day one',url:IG+'reel/DZQsLqnBeOE/'},
+ {v:'p_rodeo',who:'Fifth + Broadway',what:'Rodeo Weekend event recap',url:IG+'reel/DZBVAmdP7r8/'},
+ {v:'p_geodis',who:'GEODIS Park · Nashville SC',what:'USA vs. Turkey watch party',url:IG+'reel/DaKOBlMv6yB/'},
+ {v:'p_cmafest',who:'CMA Fest',what:'Fan Alley brand activations',url:IG+'reel/DZbJF_ovRf2/'},
+ {v:'p_italianice',who:'Sweet Haven',what:'Franklin, TN treat feature',url:IG+'reel/DYLELtjhkuO/'},
+ {v:'p_bandana',who:'Fifth + Broadway',what:'Custom bandana bar',url:IG+'reel/DY_dVNaNJ5k/'},
+ {v:'p_pinterest',who:'Pinterest',what:'Pinterest-inspired outfit',url:IG+'reel/DYh9G0pvBSD/'},
+ {v:'p_spiderman',who:'Spider-Man: Brand New Day',what:'Movie-night fit, shoppable on ShopMy',url:IG+'reel/Dbenf6XvgjK/'},
+ {v:'p_wd_store',who:'Well Dressed',what:'A day on the shop floor',url:IG+'reel/DZd9Zj3M9D2/'},
+ {v:'p_bonnaroo',who:'Bonnaroo',what:'Festival moment',url:IG+'reel/DZ5jbeDPNDP/'},
+ {v:'v_paris',who:'Paris',what:'A childhood dream, Ratatouille-style',url:IG+'reel/Ddzez3yBjDN/'},
+ {v:'p_coldplunge',who:'Lake Louise',what:'Glacier cold plunge',url:IG+'reel/Dc1zlZnhfZH/'},
+ {v:'p_mvshoot',who:'Behind the scenes',what:'One-take music video shoot',url:IG+'reel/DWLTHJAjfXx/'}
+];
+const STILLS=[
+ {i:'w_wd_white_0',l:'Well Dressed · CMA Fest',alt:'Noelani in an all-white dress, hat and cowboy boots on Broadway in Nashville'},
+ {i:'w_fifthandb_0',l:'Fifth + Broadway',alt:'Noelani in denim at the Wild Hearted Rodeo Weekend wall'},
+ {i:'m_dressed_1',l:'Bonnaroo × Ross',alt:'Noelani and a friend at the Ross booth at Bonnaroo'},
+ {i:'w_wd_day3_0',l:'Well Dressed',alt:'Noelani in a leopard skirt and black top outside a Nashville building'},
+ {i:'m_modeltest_0',l:'Model test',alt:'Full-length studio portrait of Noelani on a stool'},
+ {i:'m_look_0',l:'Street style',alt:'Noelani in a leather jacket on a city street'},
+ {i:'t_nashville_0',l:'Nashville',alt:'Noelani in a shop beside a vintage car'},
+ {i:'m_moredays_0',l:'12 South',alt:'Noelani with a drink at an outdoor café table'}
+];
+const PLACES=[
+ {n:'Paris',c:'France',d:'Sep 2026',p:['t_paris_0','t_paris_3','t_paris_1','t_paris_2'],url:IG+'p/Dd6gj51FB5p/'},
+ {n:'Banff & Lake Louise',c:'Canada',d:'Aug–Sep 2026',p:['t_banff_0','t_banff_1','t_banff_2','t_rockies_0','t_rockies_1','t_rockies_2'],url:IG+'p/Dc0-e-5EZE1/'},
+ {n:'Moraine Lake',c:'Canada',d:'Sep 2026',p:['t_moraine_0','t_moraine_1'],url:IG+'p/DdFSIwklPUO/'},
+ {n:'Glacier',c:'Montana',d:'Sep 2026',p:['t_glacier_0','t_glacier_1'],url:IG+'p/DdWd7xKEaCX/'},
+ {n:'Yellowstone',c:'Wyoming',d:'Sep 2026',p:['t_yellowstone_1','t_yellowstone_2','t_yellowstone_0'],url:IG+'p/Ddd2L1lkdpA/'},
+ {n:'Grand Teton',c:'Wyoming',d:'Sep 2026',p:['t_teton_2','t_teton_0','t_teton_1'],url:IG+'p/DdkAvTlDFzt/'},
+ {n:'Miami',c:'Florida',d:'Summer 2026',p:['t_miami_0','t_miami_2','t_miami_1'],url:IG+'p/DbqTbnoDE_h/'},
+ {n:'Nashville',c:'Tennessee',d:'Home base',p:['t_nashville_0','t_nashville_1','t_harpeth_1','t_harpeth_0'],url:IG+'p/DaqFx5CFHKa/'},
+ {n:'Los Angeles',c:'California',d:'Apr 2026',p:['t_la_0','t_la_1','t_la_2'],url:IG+'p/DXYXv3iDQfC/'},
+ {n:'Dominican Republic',c:'Caribbean',d:'Jan 2026',p:['t_dr_0','t_dr_3','t_dr_1'],url:IG+'p/DUHTCMKAZ83/'}
+];
+const $=s=>document.querySelector(s);
+const esc=s=>s.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+// shelf
+const shelf=$('#shelf');
+shelf.innerHTML=REELS.map((r,k)=>`<button class="reel" data-k="${k}" aria-label="Play ${esc(r.who)}: ${esc(r.what)}"><div class="frame"><img src="${r.v}_0-s.jpg" alt="" loading="lazy"><video muted playsinline loop preload="none" poster="${r.v}_0-s.jpg" data-src="${r.v}.mp4"></video><span class="play"><svg viewBox="0 0 10 12"><path d="M0 0l10 6-10 6z"/></svg></span></div><div><div class="who">${esc(r.who)}</div><div class="what">${esc(r.what)}</div></div></button>`).join('');
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const vids=[...shelf.querySelectorAll('video')];
+function startV(v){if(reduce)return; if(!v.src)v.src=v.dataset.src; v.play().catch(()=>{});}
+function stopV(v){v.pause();}
+if('IntersectionObserver' in window){
+  const io=new IntersectionObserver(es=>es.forEach(e=>{e.isIntersecting&&e.intersectionRatio>.6?startV(e.target):stopV(e.target)}),{threshold:[0,.6,1]});
+  vids.forEach(v=>io.observe(v));
+}
+document.querySelectorAll('.arrow').forEach(b=>b.onclick=()=>shelf.scrollBy({left:+b.dataset.dir*shelf.clientWidth*.8,behavior:'smooth'}));
+shelf.addEventListener('click',e=>{const b=e.target.closest('.reel'); if(b) openReels(+b.dataset.k);});
+
+// stills
+$('#stills').innerHTML=STILLS.map((s,k)=>`<button class="still" data-k="${k}" aria-label="Open photo: ${esc(s.l)}"><img src="${s.i}-s.jpg" alt="${esc(s.alt)}" loading="lazy"><span>${esc(s.l)}</span></button>`).join('');
+$('#stills').addEventListener('click',e=>{const b=e.target.closest('.still'); if(b) openGallery(STILLS.map(s=>({src:`${s.i}.jpg`,alt:s.alt})), +b.dataset.k, 'Styled work', '', '');});
+
+// places
+$('#placelist').innerHTML=PLACES.map((p,k)=>`<button class="place" data-k="${k}"><span class="name">${esc(p.n)}</span><span class="meta"><span>${esc(p.c)}</span><span>${esc(p.d)}</span></span><span class="thumbs">${p.p.slice(0,3).map(i=>`<img src="${i}-s.jpg" alt="" loading="lazy">`).join('')}</span></button>`).join('');
+const peek=$('#peek'), peekImg=peek.querySelector('img');
+$('#placelist').addEventListener('mousemove',e=>{const b=e.target.closest('.place'); if(!b){peek.classList.remove('on');return;} const p=PLACES[+b.dataset.k]; const s=`${p.p[0]}-s.jpg`; if(!peekImg.src.endsWith(s))peekImg.src=s; peek.style.left=Math.min(innerWidth-300,e.clientX+28)+'px'; peek.style.top=Math.max(70,Math.min(innerHeight-370,e.clientY-180))+'px'; peek.classList.add('on');});
+$('#placelist').addEventListener('mouseleave',()=>peek.classList.remove('on'));
+$('#placelist').addEventListener('click',e=>{const b=e.target.closest('.place'); if(!b)return; const p=PLACES[+b.dataset.k]; openGallery(p.p.map(i=>({src:`${i}.jpg`,alt:`Noelani in ${p.n}`})),0,p.n,`${p.c} · ${p.d}`,p.url);});
+
+// lightbox
+const lb=$('#lb'), lbs=$('#lbs'); let items=[], idx=0, mode='img', lastFocus=null;
+function render(){
+  lbs.querySelectorAll('img,video').forEach(n=>{if(n.tagName==='VIDEO')n.pause(); n.remove();});
+  const it=items[idx];
+  if(mode==='vid'){const v=document.createElement('video'); v.src=`${it.v}.mp4`; v.poster=`${it.v}_0.jpg`; v.controls=true; v.playsInline=true; v.autoplay=true; lbs.prepend(v); v.play().catch(()=>{});
+    $('#lbt').innerHTML=`${esc(it.who)}<small>${esc(it.what)}</small>`; $('#lbc').innerHTML=`<a href="${it.url}" target="_blank" rel="noopener">View on Instagram ↗</a>`;}
+  else {const im=document.createElement('img'); im.src=it.src; im.alt=it.alt; lbs.prepend(im); $('#lbc').innerHTML=`${idx+1} / ${items.length}`+(lb.dataset.url?` · <a href="${lb.dataset.url}" target="_blank" rel="noopener">See the full post ↗</a>`:'');}
+  $('#lbp').hidden=$('#lbn').hidden=items.length<2;
+}
+function open(){lastFocus=document.activeElement; lb.hidden=false; document.body.style.overflow='hidden'; vids.forEach(stopV); render(); $('#lbx').focus();}
+function openReels(k){mode='vid'; items=REELS; idx=k; lb.dataset.url=''; open();}
+function openGallery(list,k,title,sub,url){mode='img'; items=list; idx=k; lb.dataset.url=url||''; $('#lbt').innerHTML=`${esc(title)}${sub?`<small>${esc(sub)}</small>`:''}`; open();}
+function close(){lbs.querySelectorAll('video').forEach(v=>v.pause()); lbs.querySelectorAll('img,video').forEach(n=>n.remove()); lb.hidden=true; document.body.style.overflow=''; lastFocus&&lastFocus.focus();}
+function step(d){idx=(idx+d+items.length)%items.length; render();}
+$('#lbx').onclick=close; $('#lbp').onclick=()=>step(-1); $('#lbn').onclick=()=>step(1);
+lb.addEventListener('click',e=>{if(e.target===lb||e.target===lbs)close();});
+addEventListener('keydown',e=>{if(lb.hidden)return; if(e.key==='Escape')close(); if(e.key==='ArrowRight')step(1); if(e.key==='ArrowLeft')step(-1);});
+let tx=null; lbs.addEventListener('touchstart',e=>{tx=e.touches[0].clientX},{passive:true}); lbs.addEventListener('touchend',e=>{if(tx===null)return; const dx=e.changedTouches[0].clientX-tx; if(Math.abs(dx)>50)step(dx<0?1:-1); tx=null;});
+
+// copy email
+$('#copy').onclick=async()=>{const t=$('#em').textContent; try{await navigator.clipboard.writeText(t); $('#copy').textContent='Copied';}catch(e){const r=document.createRange(); r.selectNodeContents($('#em')); const s=getSelection(); s.removeAllRanges(); s.addRange(r); $('#copy').textContent='Selected, press copy';} setTimeout(()=>$('#copy').textContent='Copy address',2000);};
+</script>
+
+</body>
+</html>
